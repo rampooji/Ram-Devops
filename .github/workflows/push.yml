@@ -17,4 +17,4 @@ jobs:
       - name: cloning the repo
         uses: actions/checkout@v3
       - name: Deploy with rsync
-        run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.USERNAME }}ubuntu/dist/
+        run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/ubuntu/dist/
